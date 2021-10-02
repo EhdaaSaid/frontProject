@@ -1,0 +1,32 @@
+<section class="container">
+    <table class=" container">
+        <thead>
+          <tr class="">
+            <th scope="cmyHalatol">الرقم </th>
+            <th scope="cmyHalatol">كود الموظف </th>
+            <th scope="cmyHalatol">الاسم </th>
+            <th scope="col">التليفون</th>
+            <th scope="col">السن</th>
+            <th scope="col">الوظيفة </th>
+            <th scope="col">الميل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="" scope="row" *ngFor="let h of myData; let i =index">
+            <td>{{i+1}}</td>
+            <td  >{{h.newId}}</td>
+            <td>{{h.name}}</td>
+            <td>{{h.phone}}</td>
+            <td>{{h.age}}</td>
+            <td>{{h.position}}</td>
+            <td>{{h.email}}</td>
+            <td><button class="btn btn-primary mx-2"   routerLink="/user/profile/{{h._id}}" >عرض</button></td> 
+          
+            <button (click)="delUser(h._id, i)" class="btn btn-danger mx-2">مسح</button>
+          </tr>
+         
+        </tbody>
+    </table>
+
+
+</section>

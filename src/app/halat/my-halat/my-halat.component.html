@@ -1,0 +1,31 @@
+<section class="container">
+    <table class=" container">
+        <thead>
+          <tr class="">
+            <th scope="cmyHalatol">الرقم </th>
+            <th scope="cmyHalatol">كود الموظف </th>
+            <th scope="cmyHalatol">كود الحالة</th>
+            <th scope="col">الاسم</th>
+            <th scope="col">التليفون</th>
+            <th scope="col">عدد الوجبات</th>
+            <th scope="col">تعديل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="" scope="row" *ngFor="let h of mydata; let i =index">
+            <td>{{i+1}}</td>
+            <td  >{{h.userId}}</td>
+            <td>{{h.code}}</td>
+            <td>{{h.name}}</td>
+            <td>{{h.phone}}</td>
+            <td>{{h.wagabat}}</td>
+            <td><button class="btn btn-primary mx-2"   routerLink="/hala/editHala/{{h._id}}" >تعديل</button></td>
+            <!-- <td><button class="btn btn-sucsess mx-2"   routerLink="/hala/editHala/{{h._id}}" >عرض</button></td> -->
+            <button (click)="delHala(h._id, i)" class="btn btn-danger mx-2">مسح</button>
+          </tr>
+         
+        </tbody>
+    </table>
+
+
+</section>

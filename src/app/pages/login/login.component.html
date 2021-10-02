@@ -1,0 +1,39 @@
+
+
+<section class="container">
+    <form class="row g-3  text-end"[formGroup]="loginForm" (ngSubmit)="login()" >
+      <!-- <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div> -->
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">المـــيل</label>
+          <input type="email" class="form-control"  placeholder="example@dom.com" formControlName="email"  >
+        
+        </div>
+        <div class="col-md-12">
+            <label for="validationCustom01" class="form-label">الباســورد</label>
+            <input type="password" class="form-control" placeholder="password" formControlName="password" >
+            
+          </div>
+    
+     
+        <div class="col-12">
+          <div class="form-check d-flex flex-row-reverse">
+            <input class="form-check-input ms-0" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label me-2" for="invalidCheck">
+              موافق 
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">تسجيل الدخول</button>
+        </div>
+      </form>
+</section>

@@ -1,0 +1,18 @@
+<section class="container">
+    <div class="card text-center" *ngFor="let u of myData">
+        <div class="card-header">
+          <h3>{{u.name}}</h3> 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{u.newId}</h5>
+          <p class="card-text">{{u.position}}</p>
+          <p class="card-text">{{u.age}}</p>
+          <p class="card-text">{{u.email}}</p>
+         
+        </div>
+        <div class="card-footer text-muted">
+          {{date}}
+        </div>
+      </div>
+
+</section>

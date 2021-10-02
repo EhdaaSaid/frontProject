@@ -1,0 +1,51 @@
+<section class="container"> 
+  <form class="row g-3 text-end d-flex flex-row-reverse" [formGroup]="addUserForm" (ngSubmit)="addUser()">
+      <div class="col-md-6">
+          <label class="form-label">الاسم</label>
+          <input type="text" class="form-control" name="name" formControlName="name"  >
+          <!-- <div *ngIf="name?.invalid">
+              <li *ngIf="name?.errors?.required">
+                  required
+              </li>
+
+          </div> -->
+      </div>
+      <div class="col-md-6">
+          <label class="form-label">الميل</label>
+          <input class="form-control" name="email" type="email" formControlName="email">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">الباسورد</label>
+        <input class="form-control" name="password" type="password" formControlName="password">
+    </div>
+     
+      <div class="col-md-6">
+          <label class="form-label">الوظيفة</label>
+          <select class="form-control" name="position" type="text" formControlName="position">
+            <option value="emp">موظف</option>
+            <option value="ceo">مستخدم</option>
+          </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">التليفون </label>
+        <input class="form-control" name="phone" type="text" formControlName="phone">
+    </div>
+      <!-- <div class="col-md-6">
+        <label class="form-label">العنوان </label>
+        <input class="form-control" name="addresses" type="text" formControlName="addresses">
+    </div> -->
+      <div class="col-md-6">
+        <label class="form-label">السن </label>
+        <input class="form-control" name="age" type="number" formControlName="age">
+    </div>
+     
+      <div class="col-12">
+          <button class="btn btn-primary">اضافة </button>
+          
+
+      </div>
+  </form>
+  
+
+
+</section>

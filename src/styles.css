@@ -1,0 +1,35 @@
+:root{
+    --color1:#e5e5e5;
+    --color2:#5e5e5e;
+    --color3:#d65106;
+}
+
+.zowad{
+    color: var(--color1);
+}
+
+html{
+    font-family: "adel";
+    font-size: 16px;
+}
+
+
+
+
+ @font-face {
+    font-family: adel;
+    src: url("assets/fonts/Almarai-Light.ttf") format("woff2");
+    src: url("assets/fonts/Almarai-Light.woff") format("woff");
+    src: url("assets/fonts/Almarai-Light.woff2") format("truetype");
+    
+
+} 
+body{
+    font-family:adel
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

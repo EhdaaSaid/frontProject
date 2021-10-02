@@ -1,0 +1,33 @@
+<section class="container">
+
+    
+<form class="row g-3 text-end" [formGroup]="addHalaForm" (ngSubmit)="addHala()">
+    <div class="col-md-12">
+        <label class="form-label">الكود</label>
+        <input type="number" class="form-control" name="Code" formControlName="code">
+        <div *ngIf="code?.invalid">
+            <li *ngIf="code?.errors?.required">
+                required
+            </li>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label">الاسم</label>
+        <input class="form-control" name="name" formControlName="name">
+    </div>
+   
+    <div class="col-md-12">
+        <label class="form-label">رقم التليفون</label>
+        <input class="form-control" name="phone" type="text" formControlName="phone">
+    </div>
+    <div class="col-md-12">
+        <label class="form-label">عدد الوجبات </label>
+        <input class="form-control" name="wagabat" type="number" formControlName="wagabat">
+    </div>
+   
+    <div class="col-12">
+        <button class="btn btn-primary">اضافة </button>
+    </div>
+</form>
+
+</section>

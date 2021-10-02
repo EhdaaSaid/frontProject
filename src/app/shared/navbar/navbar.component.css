@@ -1,0 +1,17 @@
+nav{
+    color: var(--color3);
+    background-color: var(--color1);
+   
+
+}
+
+nav a  , nav ul li a {
+    color: var(--color3);
+}
+
+nav a:hover  , nav ul li a:hover {
+    color: var(--color2);
+    transition: ease-in-out 0.3s;
+}
+
+   
